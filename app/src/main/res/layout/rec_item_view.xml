@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#808080"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#FFC0CB"
+            android:ems="1"
+            android:gravity="center"
+            android:text="热门"
+            android:textColor="#ffffff" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/avatar_url"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="2dp"
+            app:roundAsCircle="true" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="姓名"
+            android:textColor="#808080" />
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/close" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:text="aaa" />
+
+    <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+        android:id="@+id/videoPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/item_freImg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_yes"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/yes" />
+
+        <TextView
+            android:id="@+id/tv_yes_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2222" />
+
+        <ImageView
+            android:id="@+id/img_no"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/no" />
+
+        <TextView
+            android:id="@+id/tv_no_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2222" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/mes" />
+
+        <TextView
+            android:id="@+id/tv_mes_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2222" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.uploadingimgdemo.MainActivity">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/simple_drawee_view"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        fresco:failureImage="@drawable/icon_failure"
+        fresco:placeholderImage="@drawable/icon"
+        fresco:progressBarAutoRotateInterval="1000"
+        fresco:progressBarImage="@drawable/icon_placeholder"
+        fresco:retryImageScaleType="centerInside"
+        fresco:roundAsCircle="true"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="41dp" />
+
+</android.support.constraint.ConstraintLayout>
